@@ -1,7 +1,42 @@
 import React from 'react'
+import AnimatedLetters from '../../components/animatedletters/AnimatedLetters.jsx';
+import mLogo from '../../assets/mcy-logo-m.png';
+import yLogo from '../../assets/mcy-logo-y.png';
 
 export default function Home() {
+  const hello = ['H','e','l','l','o','!'];
+  const named = ['I','m',' '];
+  const namedTwo = ['a','s','o','n',' '];
+  const namedThree = ['a','t','e','s',' '];
+  const lastLine = ['a',' ','W','e','b',' ','D','e','v','e','l','o','p','e','r','.'];
+
   return (
-    <div>Home</div>
+    <div className='w-screen h-screen bg-center bg-cover bg-mainBg text-white pt-20 p-4'>
+      <div className='pt-20 pb-1 mt-16 text-center pr-24 mr-14'>
+          <AnimatedLetters array={hello}/>
+      </div>
+      <div className='grid justify-items-center pr-4'>
+        <div>
+          <AnimatedLetters array={named}/>
+          <span>
+            <img src={mLogo} alt="" className='h-8 w-8 inline'/>
+            <AnimatedLetters array={namedTwo} />
+          </span>
+          <span>
+            <img src={yLogo} alt="" className='h-8 w-8 inline'/>
+            <AnimatedLetters array={namedThree} />
+          </span>
+        </div>
+        <div className='pr-2'>
+          <AnimatedLetters array={lastLine} />
+        </div>
+      </div>
+      <div className='pt-14 pb-20 grid justify-items-center'>
+        <p className='text-xs w-1/2'>Frontend Developer / React.js / Node.js / Javascript Programmer / Youtuber</p>
+      </div>
+      <div className='text-center pt-20'>
+        <a href="/contact" className='border p-4 rounded-xl bg-teal-300 text-xl border-gray-900 text-gray-900'>Contact Me</a>
+      </div>
+    </div>
   )
 }
