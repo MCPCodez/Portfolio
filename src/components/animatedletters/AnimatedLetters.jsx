@@ -5,7 +5,7 @@ export default function AnimatedLetters({array}) {
     <span>
         {
             array.map((char, i) => (
-                <span key={char+i} className='animate__animated animate__fadeIn z-10 text-2xl font-bold'>
+                <span key={char+i} className='animate__animated animate__fadeIn z-10 text-2xl md:text-4xl font-bold'>
                     {char}
                 </span>
             ))

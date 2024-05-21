@@ -30,7 +30,7 @@ export default function Nav() {
   return (
     <>
         <div className='absolute top-4 right-2 text-2xl cursor-pointer'>
-          <HiBarsArrowDown className='animate-pulse text-teal-400 z-10' onClick={navHandler} id='unactivated'/>
+          <HiBarsArrowDown className='animate-pulse text-teal-400' onClick={navHandler} id='unactivated'/>
         </div>
         <div className='absolute animate__animated animate__fadeOutUp hidden bg-gray-900 w-screen h-screen z-20' id='navbarid'>
           <HiOutlineBarsArrowUp className='hidden absolute top-4 right-2 text-2xl text-teal-400 animate-pulse cursor-pointer' onClick={navHandler} id='activated'/>
