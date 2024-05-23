@@ -2,6 +2,7 @@ import React from 'react'
 import AnimatedLetters from '../../components/animatedletters/AnimatedLetters.jsx';
 import mLogo from '../../assets/mcy-logo-m.png';
 import yLogo from '../../assets/mcy-logo-y.png';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const hello = ['H','e','l','l','o','!'];
@@ -34,8 +35,10 @@ export default function Home() {
       <div className='pt-14 pb-20 grid justify-items-center md:pl-8'>
         <p className='text-xs md:text-base w-1/2'>Frontend Developer / React.js / Node.js / Javascript Programmer / Youtuber</p>
       </div>
-      <div className='text-center pt-20'>
-        <a href="/contact" className='border p-4 rounded-xl bg-teal-300 text-xl border-gray-900 text-gray-900'>Contact Me!</a>
+      <div className='text-center pt-20 grid justify-items-center'>
+        <Link to='/contact'>
+          <p className='border p-4 rounded-xl bg-teal-300 text-xl border-gray-900 text-gray-900'>Contact Me!</p>
+        </Link>
       </div>
     </div>
   )
