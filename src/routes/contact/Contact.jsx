@@ -44,7 +44,7 @@ export default function Contact() {
             </li>
             <li className='grid justify-items-center pb-4'>
               <label htmlFor="message" className='text-white text-xl pr-24 mr-16 pb-4 md:text-2xl md:mr-20 md:ml-2'>Message</label>
-              <textarea name="message" id="message" className='text-white bg-gray-600 border border-gray-900 text-lg pl-2 rounded-lg md:text-xl' rows='5'></textarea>
+              <textarea name="message" id="message" className='text-white bg-gray-600 border border-gray-900 text-xl pl-2 rounded-lg md:text-xl' rows='5'></textarea>
             </li>
             <li className='grid justify-items-center pb-4 pt-10'>
               <input type="submit" value="Send Email" className='border border-gray-900 p-4 pr-6 pl-6 rounded-lg text-lg font-bold bg-gray-800 hover:bg-teal-400 cursor-pointer text-white hover:text-purple-500 md:pr-10 md:pl-10'/>
