@@ -35,7 +35,7 @@ export default function Home() {
         <p className='text-xs md:text-base w-1/2'>Frontend Developer / React.js / Node.js / Javascript Programmer / Youtuber</p>
       </div>
       <div className='text-center pt-20'>
-        <a href="/contact" className='border p-4 rounded-xl bg-teal-300 text-xl border-gray-900 text-gray-900'>Contact Me</a>
+        <a href="/contact" className='border p-4 rounded-xl bg-teal-300 text-xl border-gray-900 text-gray-900'>Contact Me!</a>
       </div>
     </div>
   )
