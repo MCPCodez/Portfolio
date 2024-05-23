@@ -15,7 +15,7 @@ export default function Project() {
                                 </div>
                                 <a href={e.url}><img src={e.img} alt="" className='w-max h-max shadow-lg shadow-teal-300 border-teal-300 rounded-sm border cursor-pointer hover:scale-110'/></a>
                             </div>
-                            <div className='pt-3'>
+                            <div className='pt-6'>
                                 <div className='pb-2 font-bold'>
                                     {e.name}
                                 </div>
