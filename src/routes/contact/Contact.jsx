@@ -10,7 +10,7 @@ export default function Contact() {
     console.log(form.current);
     emailjs
       .sendForm('service_624vh2s','template_cjdnl7n', form.current,{
-        publicKey:SECRET
+        publicKey:process.env.SECRET
       })
       .then(
         () => {
