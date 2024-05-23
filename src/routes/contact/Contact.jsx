@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { url } from '../../components/secrets/secrets.js';
+import { SECRET } from '../../components/secrets/secrets.js';
 
 export default function Contact() {
   const form = useRef();
@@ -10,7 +10,7 @@ export default function Contact() {
     console.log(form.current);
     emailjs
       .sendForm('service_624vh2s','template_cjdnl7n', form.current,{
-        publicKey:url
+        publicKey:SECRET
       })
       .then(
         () => {
