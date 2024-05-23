@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { SECRET } from '../../components/secrets/secrets.js';
 
 export default function Contact() {
   const form = useRef();
