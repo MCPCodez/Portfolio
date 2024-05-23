@@ -9,6 +9,9 @@ export default {
       backgroundImage: {
         'mainBg': 'url("/src/assets/mcy-background.png")',
       },
+      scale: {
+        '250': '2.50',
+      },
     },
   },
   plugins: [],
