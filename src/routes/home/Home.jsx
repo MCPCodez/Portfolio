@@ -12,8 +12,8 @@ export default function Home() {
   const lastLine = ['a',' ','W','e','b',' ','D','e','v','e','l','o','p','e','r','.'];
 
   return (
-    <div className='w-screen h-screen bg-center bg-cover bg-mainBg text-white pt-20 p-4'>
-      <div className='pt-20 pb-1 mt-16 text-center pr-24 mr-14 md:mr-24'>
+    <div className='w-screen h-screen bg-center bg-cover bg-mainBg text-white pt-20 p-4 lg:pt-10'>
+      <div className='pt-20 pb-1 mt-16 text-center pr-24 mr-14 md:mr-24 lg:text-start lg:pl-36'>
           <AnimatedLetters array={hello}/>
       </div>
       <div className='grid justify-items-center pr-4 md:pr-0 md:pl-4'>

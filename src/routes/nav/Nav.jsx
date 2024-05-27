@@ -29,10 +29,10 @@ export default function Nav() {
 
   return (
     <>
-        <div className='absolute top-4 right-2 text-2xl cursor-pointer'>
+        <div className='absolute top-4 right-2 text-2xl cursor-pointer lg:left-4 lg:top-4'>
           <HiBarsArrowDown className='animate-pulse text-teal-400' onClick={navHandler} id='unactivated'/>
         </div>
-        <div className='absolute animate__animated animate__fadeOutUp hidden bg-gray-900 w-screen h-screen z-20' id='navbarid'>
+        <div className='absolute animate__animated animate__fadeOutUp hidden bg-gray-900 w-screen h-screen z-20 lg:w-1/12' id='navbarid'>
           <HiOutlineBarsArrowUp className='hidden absolute top-4 right-2 text-2xl text-teal-400 animate-pulse cursor-pointer' onClick={navHandler} id='activated'/>
           <div className='text-white pl-4 pt-4'>
             <Link to='/' onClick={navHandler}>
@@ -41,37 +41,37 @@ export default function Nav() {
           </div>
           <div className='grid justify-center'>
             <Link to='/projects' onClick={navHandler}>
-              <img src={logo} alt="" className='h-36 w-44'/>
+              <img src={logo} alt="" className='h-36 w-44 lg:p-4'/>
             </Link>
           </div>
-          <ul className='grid grid-rows-4 w-screen text-center h-2/4'>
-            <li className='bg-purple-400 h-max pb-4 pt-4 rounded-lg'>
-              <Link to='/' onClick={navHandler}>
-                <AiTwotoneHome className='hidden'/>
-                <span className='text-2xl text-teal-300 font-bold'>Home Page</span>
+          <ul className='grid grid-rows-4 w-screen text-center h-2/4 lg:w-max lg:pl-0 lg:w-full lg:justify-items-center lg:pt-10 lg:h-min'>
+            <li className='bg-purple-400 h-max pb-4 pt-4 rounded-lg lg:bg-inherit'>
+              <Link to='/' onClick={navHandler} className='group lg:p-4'>
+                <AiTwotoneHome className='hidden lg:block lg:w-8 lg:h-8 lg:text-teal-300 lg:group-hover:hidden'/>
+                <span className='text-2xl text-teal-300 font-bold lg:hidden lg:group-hover:block lg:text-xl lg:pt-1'>Home Page</span>
               </Link>
             </li>
-            <li className='bg-purple-400 h-max pb-4 pt-4 rounded-lg'>
-              <Link to='/about' onClick={navHandler}>
-                <FcAbout className='hidden'/>
-                <span className='text-2xl text-teal-300 font-bold'>About Me</span>
+            <li className='bg-purple-400 h-max pb-4 pt-4 rounded-lg lg:bg-inherit'>
+              <Link to='/about' onClick={navHandler} className='group'>
+                <FcAbout className='hidden lg:block lg:w-8 lg:h-8 lg:text-teal-300 lg:group-hover:hidden'/>
+                <span className='text-2xl text-teal-300 font-bold lg:hidden lg:group-hover:block lg:text-xl lg:pt-0'>About Me</span>
               </Link>
             </li>
-            <li className='bg-purple-400 h-max pb-4 pt-4 rounded-lg'>
-              <Link to='/contact' onClick={navHandler}>
-                <GrContact className='hidden'/>
-                <span className='text-2xl text-teal-300 font-bold'>Contact Me</span>
+            <li className='bg-purple-400 h-max pb-4 pt-4 rounded-lg lg:bg-inherit'>
+              <Link to='/contact' onClick={navHandler} className='group'>
+                <GrContact className='hidden lg:block lg:w-8 lg:h-8 lg:text-teal-300 lg:group-hover:hidden'/>
+                <span className='text-2xl text-teal-300 font-bold lg:hidden lg:group-hover:block lg:text-xl lg:pt-0'>Contact Me</span>
               </Link>
             </li>
-            <li className='bg-purple-400 h-max pb-4 pt-4 rounded-lg'>
-              <Link to='/projects' onClick={navHandler}>
-                <GrProjects className='hidden'/>
-                <span className='text-2xl text-teal-300 font-bold'>My Projects</span>
+            <li className='bg-purple-400 h-max pb-4 pt-4 rounded-lg lg:bg-inherit'>
+              <Link to='/projects' onClick={navHandler} className='group'>
+                <GrProjects className='hidden lg:block lg:w-8 lg:h-8 lg:text-teal-300 lg:group-hover:hidden'/>
+                <span className='text-2xl text-teal-300 font-bold lg:hidden lg:group-hover:block lg:text-xl lg:pt-0'>My Projects</span>
               </Link>  
             </li>
           </ul>
-          <ul className='grid grid-cols-3 justify-items-center text-2xl pt-16'>
-            <li>
+          <ul className='grid grid-cols-3 justify-items-center text-2xl pt-16 lg:grid-rows-3 lg:grid-cols-none lg:p-4'>
+            <li className='lg:pb-6'>
               <Link to='https://mcyportfolio.com' target='_blank'>
                 <FaDiscord className='text-[#5865F2]'/>
               </Link>
