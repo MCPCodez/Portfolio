@@ -32,7 +32,7 @@ export default function Nav() {
         <div className='absolute top-4 right-2 text-2xl cursor-pointer lg:left-4 lg:top-4'>
           <HiBarsArrowDown className='animate-pulse text-teal-400' onClick={navHandler} id='unactivated'/>
         </div>
-        <div className='absolute animate__animated animate__fadeOutUp hidden bg-gray-900 w-screen h-screen z-20 lg:w-1/12' id='navbarid'>
+        <div className='absolute animate__animated animate__fadeOutUp hidden bg-gray-900 w-screen h-screen z-20 lg:w-1/12 lg:animate__fadeInDown' id='navbarid'>
           <HiOutlineBarsArrowUp className='hidden absolute top-4 right-2 text-2xl text-teal-400 animate-pulse cursor-pointer' onClick={navHandler} id='activated'/>
           <div className='text-white pl-4 pt-4'>
             <Link to='/' onClick={navHandler}>
@@ -44,7 +44,7 @@ export default function Nav() {
               <img src={logo} alt="" className='h-36 w-44 lg:p-4'/>
             </Link>
           </div>
-          <ul className='grid grid-rows-4 w-screen text-center h-2/4 lg:w-max lg:pl-0 lg:w-full lg:justify-items-center lg:pt-10 lg:h-min'>
+          <ul className='grid grid-rows-4 w-screen text-center h-2/4 lg:w-max lg:pl-0 lg:w-full lg:justify-items-center lg:pt-10 lg:h-ax'>
             <li className='bg-purple-400 h-max pb-4 pt-4 rounded-lg lg:bg-inherit'>
               <Link to='/' onClick={navHandler} className='group lg:p-4'>
                 <AiTwotoneHome className='hidden lg:block lg:w-8 lg:h-8 lg:text-teal-300 lg:group-hover:hidden'/>

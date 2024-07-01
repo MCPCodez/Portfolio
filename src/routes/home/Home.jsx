@@ -13,11 +13,11 @@ export default function Home() {
 
   return (
     <div className='w-screen h-screen bg-center bg-cover bg-mainBg text-white pt-20 p-4 lg:pt-10'>
-      <div className='pt-20 pb-1 mt-16 text-center pr-24 mr-14 md:mr-24 lg:text-start lg:pl-36'>
+      <div className='pt-20 pb-1 mt-16 text-center pr-24 mr-14 md:mr-24 lg:text-start lg:pl-48 lg:ml-40'>
           <AnimatedLetters array={hello}/>
       </div>
-      <div className='grid justify-items-center pr-4 md:pr-0 md:pl-4'>
-        <div>
+      <div className='grid justify-items-center pr-4 md:pr-0 md:pl-4 lg:justify-items-start lg:pl-48 lg:ml-40'>
+        <div className=''>
           <AnimatedLetters array={named}/>
           <span>
             <img src={mLogo} alt="" className='h-8 w-8 inline md:h-12 md:w-12'/>
@@ -32,10 +32,10 @@ export default function Home() {
           <AnimatedLetters array={lastLine} />
         </div>
       </div>
-      <div className='pt-14 pb-20 grid justify-items-center md:pl-8'>
-        <p className='text-xs md:text-base w-1/2'>Frontend Developer / React.js / Node.js / Javascript Programmer / Youtuber</p>
+      <div className='pt-14 pb-20 grid justify-items-center md:pl-8 lg:justify-items-start lg:pl-48 lg:ml-36 lg:pb-5'>
+        <p className='text-xs md:text-base w-1/2 lg:text-lg'>Frontend Developer / React.js / Node.js / Javascript Programmer / Youtuber</p>
       </div>
-      <div className='text-center pt-20 grid justify-items-center'>
+      <div className='text-center pt-20 grid justify-items-center lg:justify-items-start lg:pl-48 lg:ml-48 lg:pt-12'>
         <Link to='/contact'>
           <p className='border p-4 rounded-xl bg-teal-300 text-xl border-gray-900 text-gray-900'>Contact Me!</p>
         </Link>
